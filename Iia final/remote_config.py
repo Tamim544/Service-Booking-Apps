@@ -63,7 +63,7 @@ SECURITY_CONFIG = {
 
 # LLM Configuration
 LLM_CONFIG = {
-    'api_key': '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',
+    'api_key': 'Use your own api key',
     'model': 'anthropic/claude-3.5-sonnet',
     'max_tokens': 500,
     'temperature': 0.7,
@@ -132,4 +132,5 @@ def update_secondary_ip(new_ip):
 if __name__ == "__main__":
     print(f"Detected local IP: {LOCAL_IP}")
     print(f"Primary DB: {DATABASE_CONFIG['primary']['host']}")
+
     print(f"Secondary DB: {DATABASE_CONFIG['secondary']['host']}")
