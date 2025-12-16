@@ -26,7 +26,7 @@ class StandaloneAISearch:
 
     def __init__(self, use_fallback: bool = False):
         # Prefer environment variable; fall back to hardcoded placeholder
-        self.api_key: str = os.getenv("GOOGLE_API_KEY", "AIzaSyDYvtoPhcz14Mp_ib8wPOS7zYxbT6aeHDQ")
+        self.api_key: str = os.getenv("GOOGLE_API_KEY", "Use your own key")
         # Use any valid Gemini model you have access to
         self.model: str = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 
